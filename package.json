@@ -14,11 +14,11 @@
   "author": "Prajkt Yeole",
   "license": "MIT",
   "devDependencies": {
-    "gulp": "~3.9.1",
-    "gulp-sass": "~2.3.2",
-    "run-sequence": "~1.2.2"
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0",
+    "run-sequence": "^2.2.0"
   },
   "dependencies": {
-    "gulp-prompt": "^0.2.0"
+    "gulp-prompt": "^1.0.0"
   }
 }
