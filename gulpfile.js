@@ -19,8 +19,8 @@ gulp.task('sass', function () {
 });
 
 //scss watch
-gulp.task('watchscss', ['sass'], function () {
-    gulp.watch(src);
+gulp.task('watchscss', function() {
+    gulp.watch(src, ['sass']);
 });
 
 gulp.task('compile', function () {
@@ -29,12 +29,12 @@ gulp.task('compile', function () {
         .pipe(prompt.prompt([{
             type: 'input',
             name: 'src',
-            message: 'Enter the path of the scss file'
+            message: 'Enter the path of the scss file : '
         },
         {
             type: 'input',
             name: 'dist',
-            message: 'Enter the destination path of the scss file'
+            message: 'Enter the destination path of the css file : '
         }],
          function (res) {
             src = res.src;
